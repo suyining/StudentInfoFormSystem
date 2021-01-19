@@ -1,0 +1,115 @@
+2021-01-19 19:46:05.571 INFO  org.sacc.smis.StudentManagementInformationSystemApplication Line:55  - Starting StudentManagementInformationSystemApplication on LAPTOP-4F87G29D with PID 7184 (C:\Users\86153\IdeaProjects\StudentInfoFormSystem\target\classes started by 86153 in C:\Users\86153\IdeaProjects\StudentInfoFormSystem)
+2021-01-19 19:46:05.582 INFO  org.sacc.smis.StudentManagementInformationSystemApplication Line:651 - No active profile set, falling back to default profiles: default
+2021-01-19 19:46:08.847 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 19:46:08.850 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-19 19:46:08.997 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 97ms. Found 0 JPA repository interfaces.
+2021-01-19 19:46:09.079 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 19:46:09.084 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 19:46:09.155 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2021-01-19 19:46:10.581 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:335 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3bb87d36' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 19:46:10.595 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:335 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 19:46:11.401 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:108 - Tomcat initialized with port(s): 8080 (http)
+2021-01-19 19:46:11.436 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2021-01-19 19:46:11.437 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2021-01-19 19:46:11.438 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 19:46:12.114 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2021-01-19 19:46:12.116 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Line:285 - Root WebApplicationContext: initialization completed in 6351 ms
+2021-01-19 19:46:12.945 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 19:46:13.144 INFO  org.hibernate.jpa.internal.util.LogHelper Line:31  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-19 19:46:13.431 INFO  org.hibernate.Version Line:44  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2021-01-19 19:46:13.785 INFO  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration Line:86  - 
+
+Using generated security password: f91b9eaf-03ad-4939-aa9c-737253637ea0
+
+2021-01-19 19:46:14.332 INFO  org.hibernate.annotations.common.Version Line:49  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-19 19:46:14.730 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2021-01-19 19:46:15.105 INFO  org.springframework.security.web.DefaultSecurityFilterChain Line:43  - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c9b5a99, org.springframework.security.web.context.SecurityContextPersistenceFilter@320be73, org.springframework.security.web.header.HeaderWriterFilter@3af2f846, org.springframework.web.filter.CorsFilter@70be89ec, org.springframework.security.web.authentication.logout.LogoutFilter@6986f93e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@46bb0bdf, org.springframework.security.web.session.ConcurrentSessionFilter@284bdeed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6af310c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@355ce6a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2aee0704, org.springframework.security.web.session.SessionManagementFilter@370c9018, org.springframework.security.web.access.ExceptionTranslationFilter@240f350a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@578c3fd9]
+2021-01-19 19:46:15.249 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2021-01-19 19:46:15.298 INFO  org.hibernate.dialect.Dialect Line:170 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-01-19 19:46:17.058 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+2021-01-19 19:46:17.203 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-19 19:46:17.211 INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener Line:49  - Triggering deferred initialization of Spring Data repositories…
+2021-01-19 19:46:17.213 INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener Line:53  - Spring Data repositories initialized!
+2021-01-19 19:46:17.263 INFO  org.sacc.smis.StudentManagementInformationSystemApplication Line:61  - Started StudentManagementInformationSystemApplication in 13.158 seconds (JVM running for 17.246)
+2021-01-19 19:46:18.572 INFO  jdbc.sqltiming Line:373 - create table application (id integer not null, created_at datetime(6), name varchar(255) not 
+null, updated_at datetime(6), creator_id integer, primary key (id)) engine=InnoDB 
+ {executed in 118 msec}
+2021-01-19 19:46:18.672 INFO  jdbc.sqltiming Line:373 - create table application_items (application_id integer not null, items_id integer not null) 
+engine=InnoDB 
+ {executed in 95 msec}
+2021-01-19 19:46:18.750 INFO  jdbc.sqltiming Line:373 - create table hibernate_sequence (next_val bigint) engine=InnoDB 
+ {executed in 74 msec}
+2021-01-19 19:46:18.759 INFO  jdbc.sqltiming Line:373 - insert into hibernate_sequence values ( 1 ) 
+ {executed in 8 msec}
+2021-01-19 19:46:18.845 INFO  jdbc.sqltiming Line:373 - create table item (id integer not null, created_at datetime(6), name varchar(255) not null, 
+updated_at datetime(6), application_id integer, type_id integer, primary key (id)) engine=InnoDB 
+ {executed in 84 msec}
+2021-01-19 19:46:18.947 INFO  jdbc.sqltiming Line:373 - create table item_type (id integer not null, created_at datetime(6), data_source varchar(255), 
+name varchar(255) not null, updated_at datetime(6), valid_rule varchar(255), primary key (id)) 
+engine=InnoDB 
+ {executed in 97 msec}
+2021-01-19 19:46:19.033 INFO  jdbc.sqltiming Line:373 - create table item_value (id integer not null, created_at datetime(6), updated_at datetime(6), 
+value varchar(255), item_id integer, user_id integer, primary key (id)) engine=InnoDB 
+ {executed in 83 msec}
+2021-01-19 19:46:19.375 INFO  jdbc.sqltiming Line:373 - alter table application_items add constraint UK_ao3yg3oqhxm9aqi0v1lha8162 unique (items_id) 
+ {executed in 278 msec}
+2021-01-19 19:46:19.604 INFO  jdbc.sqltiming Line:373 - alter table application add constraint FKftt71e2tec5cdy98oon5a02ih foreign key (creator_id) 
+references user (id) 
+ {executed in 227 msec}
+2021-01-19 19:46:19.773 INFO  jdbc.sqltiming Line:373 - alter table application_items add constraint FKg0wx6rxlcvmft3g4fmdiqq8o3 foreign key (items_id) 
+references item (id) 
+ {executed in 165 msec}
+2021-01-19 19:46:19.947 INFO  jdbc.sqltiming Line:373 - alter table application_items add constraint FKl26bp0jwmq1u00cja8enm1ka9 foreign key (application_id) 
+references application (id) 
+ {executed in 171 msec}
+2021-01-19 19:46:20.202 INFO  jdbc.sqltiming Line:373 - alter table item add constraint FKrgie70f0d5om6d0b8jbjtoynt foreign key (application_id) references 
+application (id) 
+ {executed in 251 msec}
+2021-01-19 19:46:20.371 INFO  jdbc.sqltiming Line:373 - alter table item add constraint FKg9lymegmlbvqtjrwpvkcdo5gr foreign key (type_id) references 
+item_type (id) 
+ {executed in 168 msec}
+2021-01-19 19:46:20.550 INFO  jdbc.sqltiming Line:373 - alter table item_value add constraint FKh4o78d7pasj6p4tmj443fcktk foreign key (item_id) references 
+item (id) 
+ {executed in 175 msec}
+2021-01-19 19:46:20.729 INFO  jdbc.sqltiming Line:373 - alter table item_value add constraint FKio77835am64fi0g408v1irttg foreign key (user_id) references 
+user (id) 
+ {executed in 177 msec}
+2021-01-19 19:46:20.733 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator Line:52  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-19 19:46:20.760 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-19 19:47:01.190 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-19 19:49:03.670 INFO  org.sacc.smis.StudentManagementInformationSystemApplication Line:55  - Starting StudentManagementInformationSystemApplication on LAPTOP-4F87G29D with PID 16100 (C:\Users\86153\IdeaProjects\StudentInfoFormSystem\target\classes started by 86153 in C:\Users\86153\IdeaProjects\StudentInfoFormSystem)
+2021-01-19 19:49:03.683 INFO  org.sacc.smis.StudentManagementInformationSystemApplication Line:651 - No active profile set, falling back to default profiles: default
+2021-01-19 19:49:06.485 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 19:49:06.488 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-19 19:49:06.609 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 86ms. Found 0 JPA repository interfaces.
+2021-01-19 19:49:06.692 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-19 19:49:06.698 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-19 19:49:06.747 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:187 - Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2021-01-19 19:49:08.236 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:335 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@534e58b6' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 19:49:08.263 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:335 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-19 19:49:09.696 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:108 - Tomcat initialized with port(s): 8080 (http)
+2021-01-19 19:49:09.731 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2021-01-19 19:49:09.733 INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2021-01-19 19:49:09.735 INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-19 19:49:10.487 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2021-01-19 19:49:10.489 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Line:285 - Root WebApplicationContext: initialization completed in 6634 ms
+2021-01-19 19:49:11.562 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-19 19:49:11.852 INFO  org.hibernate.jpa.internal.util.LogHelper Line:31  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-19 19:49:12.050 INFO  org.hibernate.Version Line:44  - HHH000412: Hibernate ORM core version 5.4.22.Final
+2021-01-19 19:49:12.476 INFO  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration Line:86  - 
+
+Using generated security password: aaef5b46-ec3e-4011-ab85-ab1c4e9d14f0
+
+2021-01-19 19:49:12.627 INFO  org.hibernate.annotations.common.Version Line:49  - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-19 19:49:13.119 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2021-01-19 19:49:13.751 INFO  org.springframework.security.web.DefaultSecurityFilterChain Line:43  - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@935493d, org.springframework.security.web.context.SecurityContextPersistenceFilter@75eaba95, org.springframework.security.web.header.HeaderWriterFilter@706f6d26, org.springframework.web.filter.CorsFilter@9b367c8, org.springframework.security.web.authentication.logout.LogoutFilter@6897a4a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@34c76167, org.springframework.security.web.session.ConcurrentSessionFilter@1a14fdf0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@435e416c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28fc1132, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34c62fdf, org.springframework.security.web.session.SessionManagementFilter@6af65f29, org.springframework.security.web.access.ExceptionTranslationFilter@46b2dcc5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79195c22]
+2021-01-19 19:49:13.807 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2021-01-19 19:49:13.899 INFO  org.hibernate.dialect.Dialect Line:170 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-01-19 19:49:16.253 INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-8080"]
+2021-01-19 19:49:16.338 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:220 - Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-19 19:49:16.344 INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener Line:49  - Triggering deferred initialization of Spring Data repositories…
+2021-01-19 19:49:16.387 INFO  org.springframework.data.repository.config.DeferredRepositoryInitializationListener Line:53  - Spring Data repositories initialized!
+2021-01-19 19:49:16.431 INFO  org.sacc.smis.StudentManagementInformationSystemApplication Line:61  - Started StudentManagementInformationSystemApplication in 14.181 seconds (JVM running for 17.64)
+2021-01-19 19:49:17.072 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator Line:52  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-19 19:49:17.193 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:416 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-19 19:49:26.055 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
