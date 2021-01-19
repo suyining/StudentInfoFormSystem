@@ -19,13 +19,13 @@ public class ItemValue {
     /**
      * 对应的Item
      */
-    @ManyToOne
-    private Item item;
+    @Column(nullable = false)
+    private Integer itemId;
     /**
      * 填写人
      */
-    @OneToOne
-    private User user;
+    @Column(nullable = false)
+    private Integer userId;
 
     private String value;
 

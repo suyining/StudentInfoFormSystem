@@ -26,11 +26,8 @@ public class Application {
     @Column(nullable = false)
     private String name;
 
-    @OneToMany
-    private List<Item> items;
-
-    @OneToOne
-    private User creator;
+    @Column(nullable = false)
+    private Integer userId;
 
     @CreatedDate
     private LocalDateTime createdAt;

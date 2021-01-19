@@ -1,5 +1,6 @@
 package org.sacc.smis.entity;
 
+import io.swagger.models.auth.In;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -19,16 +20,16 @@ public class Item {
     /**
      * 项目名称对应的表单
      */
-    @ManyToOne
-    private Application application;
+    @Column(nullable = false)
+    private Integer applicationId;
     /**
      * 填写的项目名称
      */
     @Column(nullable = false)
     private String name;
 
-    @OneToOne
-    private ItemType type;
+    @Column(nullable = false)
+    private Integer itemTypeId;
 
     @CreatedDate
     private LocalDateTime createdAt;

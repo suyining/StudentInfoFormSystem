@@ -1,4 +1,4 @@
-package org.sacc.smis.pojo;
+package org.sacc.smis.enums;
 
 public enum ResultEnum {
 

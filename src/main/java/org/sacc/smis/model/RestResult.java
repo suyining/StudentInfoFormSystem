@@ -2,7 +2,7 @@ package org.sacc.smis.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
-import org.sacc.smis.pojo.ResultEnum;
+import org.sacc.smis.enums.ResultEnum;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
