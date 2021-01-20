@@ -5,6 +5,7 @@ import org.sacc.smis.entity.UserRegisterParam;
 import org.sacc.smis.mapper.UserMapper;
 import org.sacc.smis.model.UserInfo;
 import org.sacc.smis.service.UserService;
+import org.sacc.smis.util.GetNullPropertyNamesUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,6 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Created by 林夕
@@ -46,6 +48,15 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         User user = new User();
         BeanUtils.copyProperties(userRegisterParam,user);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
+        userMapper.save(user);
+        return true;
+    }
+
+    @Override
+    public boolean updateInfo(User user) {
+        User u = userMapper.findByPrimaryKey(user.getId());
+        BeanUtils.copyProperties(user,u,GetNullPropertyNamesUtil.getNullPropertyNames(user));
+        userMapper.save(u);
         return true;
     }
 }

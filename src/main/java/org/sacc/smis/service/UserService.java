@@ -14,4 +14,6 @@ public interface UserService {
     List<User> findAll();
 
     boolean register(UserRegisterParam userRegisterParam);
+
+    boolean updateInfo(User user);
 }
