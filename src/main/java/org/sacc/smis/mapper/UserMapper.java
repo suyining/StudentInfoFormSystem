@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
  * Date 2021/1/19 20:15
  */
 public interface UserMapper extends JpaRepository<User,Integer> {
-    public User findByStudentId(String studentId);
+    User findByStudentId(String studentId);
 }

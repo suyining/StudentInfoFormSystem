@@ -1,8 +1,13 @@
 package org.sacc.smis.entity;
 
 import lombok.Data;
+import net.bytebuddy.implementation.bind.annotation.Default;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.security.config.authentication.PasswordEncoderParser;
+import org.springframework.security.crypto.factory.PasswordEncoderFactories;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -22,7 +27,7 @@ public class User {
     private String password;
     private String studentId;
     @Column(nullable = false)
-    private String role;
+    private String role = "1";
     @CreatedDate
     private LocalDateTime createdAt;
     @LastModifiedDate

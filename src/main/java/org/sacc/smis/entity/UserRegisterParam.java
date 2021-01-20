@@ -11,4 +11,6 @@ public class UserRegisterParam {
     private String studentId;
 
     private String password;
+
+    private String email;
 }
