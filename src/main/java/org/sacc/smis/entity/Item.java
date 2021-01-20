@@ -31,6 +31,16 @@ public class Item {
     @Column(nullable = false)
     private Integer itemTypeId;
 
+    /**
+     * 班长给出的tag
+     */
+    private String monitorTag;
+
+    /**
+     * 辅导员给出的tag
+     */
+    private String teacherTag;
+
     @CreatedDate
     private LocalDateTime createdAt;
     @LastModifiedDate
