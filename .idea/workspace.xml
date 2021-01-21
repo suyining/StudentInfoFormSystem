@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0340f58f-72c0-4c68-89cb-e5047477c6cb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/entity/User.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\86153\.m2\wrapper\dists\apache-maven-3.6.3-bin\1iopthnavndlasol9gbrbg6bf2\apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jy4Z8dMXs8tnLT79nhTkQmBiZc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/interact" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.sacc.smis.pojo" />
+      <recent name="org.sacc.smis.model" />
+      <recent name="org.sacc.smis.util" />
+      <recent name="org.sacc.smis.conf" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\86153\IdeaProjects\StudentInfoFormSystem\src\main\resources" />
+      <recent name="C:\Users\86153\Downloads\StudentInfoFormSystem" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="StudentManagementInformationSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="student-management-information-system" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sacc.smis.StudentManagementInformationSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0340f58f-72c0-4c68-89cb-e5047477c6cb" name="Default Changelist" comment="" />
+      <created>1604763050820</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604763050820</updated>
+      <workItem from="1604763051883" duration="2710000" />
+      <workItem from="1604806834122" duration="890000" />
+      <workItem from="1605164895701" duration="198000" />
+      <workItem from="1610620710299" duration="955000" />
+      <workItem from="1610876612353" duration="1997000" />
+      <workItem from="1610880596458" duration="2536000" />
+      <workItem from="1610963040107" duration="3412000" />
+      <workItem from="1610980672026" duration="115000" />
+      <workItem from="1610980959868" duration="69000" />
+      <workItem from="1610981172535" duration="638000" />
+      <workItem from="1611048546443" duration="12678000" />
+      <workItem from="1611066066017" duration="7264000" />
+      <workItem from="1611132472646" duration="9880000" />
+    </task>
+    <task id="LOCAL-00001" summary="README">
+      <created>1610980717564</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610980717564</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <created>1610981303298</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610981303298</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init">
+      <created>1610981714084</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610981714085</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1-19">
+      <created>1611061900376</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611061900376</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1-19">
+      <created>1611069156220</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611069156221</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1-20">
+      <created>1611136838839</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611136838839</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1-20">
+      <created>1611143943501</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611143943501</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1-20">
+      <created>1611144621007</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611144621007</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="README" />
+    <MESSAGE value="init" />
+    <MESSAGE value="1-19" />
+    <MESSAGE value="1-20" />
+    <option name="LAST_COMMIT_MESSAGE" value="1-20" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="331" y="141" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611056291100">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="331" y="141" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1611056291100" />
+    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1611139575881">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1611139575881" />
+    <state x="132" y="0" key="CommitChangelistDialog2" timestamp="1611144619941">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="132" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1611144619941" />
+    <state x="421" y="110" key="FileChooserDialogImpl" timestamp="1611132792315">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="110" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1611132792315" />
+    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1605164905424" />
+    <state width="618" height="215" key="GridCell.Tab.0.bottom" timestamp="1611144645374">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="265" key="GridCell.Tab.0.bottom/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
+    <state width="618" height="215" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1611144645374" />
+    <state width="1237" height="7" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
+    <state width="618" height="215" key="GridCell.Tab.0.center" timestamp="1611144645374">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="265" key="GridCell.Tab.0.center/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
+    <state width="618" height="215" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1611144645374" />
+    <state width="1237" height="7" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
+    <state width="618" height="215" key="GridCell.Tab.0.left" timestamp="1611144645374">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="265" key="GridCell.Tab.0.left/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
+    <state width="618" height="215" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1611144645374" />
+    <state width="1237" height="7" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
+    <state width="618" height="215" key="GridCell.Tab.0.right" timestamp="1611144645374">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="265" key="GridCell.Tab.0.right/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
+    <state width="618" height="215" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1611144645374" />
+    <state width="1237" height="7" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
+    <state width="618" height="215" key="GridCell.Tab.1.bottom" timestamp="1611144645374">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="265" key="GridCell.Tab.1.bottom/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
+    <state width="618" height="215" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1611144645374" />
+    <state width="1237" height="7" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1604765827141" />
+    <state width="618" height="215" key="GridCell.Tab.1.center" timestamp="1611144645374">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="265" key="GridCell.Tab.1.center/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
+    <state width="618" height="215" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1611144645374" />
+    <state width="1237" height="7" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
+    <state width="618" height="215" key="GridCell.Tab.1.left" timestamp="1611144645374">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="265" key="GridCell.Tab.1.left/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
+    <state width="618" height="215" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1611144645374" />
+    <state width="1237" height="7" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
+    <state width="618" height="215" key="GridCell.Tab.1.right" timestamp="1611144645374">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="265" key="GridCell.Tab.1.right/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
+    <state width="618" height="215" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1611144645374" />
+    <state width="1237" height="7" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1604765827141" />
+    <state width="1237" height="265" key="GridCell.Tab.2.bottom" timestamp="1611121602031">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state width="1237" height="265" key="GridCell.Tab.2.bottom/0.0.1218.720@0.0.1218.720" timestamp="1611121602031" />
+    <state width="1237" height="265" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1611068287958" />
+    <state width="1237" height="265" key="GridCell.Tab.2.center" timestamp="1611121602030">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state width="1237" height="265" key="GridCell.Tab.2.center/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
+    <state width="1237" height="265" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1611068287957" />
+    <state width="1237" height="265" key="GridCell.Tab.2.left" timestamp="1611121602030">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state width="1237" height="265" key="GridCell.Tab.2.left/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
+    <state width="1237" height="265" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1611068287957" />
+    <state width="1237" height="265" key="GridCell.Tab.2.right" timestamp="1611121602031">
+      <screen x="0" y="0" width="1218" height="720" />
+    </state>
+    <state width="1237" height="265" key="GridCell.Tab.2.right/0.0.1218.720@0.0.1218.720" timestamp="1611121602031" />
+    <state width="1237" height="265" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1611068287958" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1611144626506">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1611144626506" />
+    <state x="448" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611061869772">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="448" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1611061869772" />
+    <state x="232" y="1" key="new project wizard" timestamp="1610980550611">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="232" y="1" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1610980550611" />
+  </component>
+</project>
