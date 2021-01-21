@@ -13,6 +13,8 @@ import org.springframework.stereotype.Repository;
 public interface UserMapper extends JpaRepository<User,Integer> {
     User findByStudentId(String studentId);
 
+    User findByEmail(String email);
+
     @Query("select u from User u where u.id = :id")
     User findByPrimaryKey(@Param("id") Integer id);
 }

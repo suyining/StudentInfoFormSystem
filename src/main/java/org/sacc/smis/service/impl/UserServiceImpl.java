@@ -2,6 +2,8 @@ package org.sacc.smis.service.impl;
 
 import org.sacc.smis.entity.User;
 import org.sacc.smis.entity.UserRegisterParam;
+import org.sacc.smis.enums.Business;
+import org.sacc.smis.exception.BusinessException;
 import org.sacc.smis.mapper.UserMapper;
 import org.sacc.smis.model.UserInfo;
 import org.sacc.smis.service.UserService;
@@ -14,8 +16,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
 
 /**
  * Created by 林夕
@@ -45,9 +47,15 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     @Override
     public boolean register(UserRegisterParam userRegisterParam) {
+        if(userMapper.findByStudentId(userRegisterParam.getStudentId())!=null)
+            throw new BusinessException(Business.STUDENT_ID_IS_EXIT);
+        else if(userMapper.findByEmail(userRegisterParam.getEmail())!=null)
+            throw new BusinessException(Business.EMAIL_IS_EXIT);
         User user = new User();
         BeanUtils.copyProperties(userRegisterParam,user);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
+        user.setCreatedAt(LocalDateTime.now());
+        user.setUpdatedAt(LocalDateTime.now());
         userMapper.save(user);
         return true;
     }

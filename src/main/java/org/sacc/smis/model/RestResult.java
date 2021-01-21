@@ -41,6 +41,9 @@ public class RestResult<T> {
     public static <T> RestResult<T> error(String message){
         return new RestResult<>(500,message);
     }
+    public static <T> RestResult<T> error(T data){
+        return new RestResult<>(500,data);
+    }
     public static <T> RestResult<T> error(ResultEnum resultEnum){
         return new RestResult<>(resultEnum.getResultCode(),resultEnum.getResultMsg());
     }
