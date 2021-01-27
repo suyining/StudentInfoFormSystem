@@ -23,6 +23,7 @@ public class UserInfo extends User implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         List<GrantedAuthority> authorities = new ArrayList<>();
+        //添加用户权限
         authorities.add(new SimpleGrantedAuthority("ROLE_" + UserRole.values()[Integer.parseInt(getRole())].toString()));
         return authorities;
     }
