@@ -1,5 +1,6 @@
 package org.sacc.smis.service.impl;
 
+import org.sacc.smis.entity.Item;
 import org.sacc.smis.entity.User;
 import org.sacc.smis.entity.UserRegisterParam;
 import org.sacc.smis.mapper.UserMapper;
@@ -59,4 +60,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         userMapper.save(u);
         return true;
     }
+
+
 }

@@ -25,7 +25,8 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
             "/swagger-ui.html",
             "/webjars/**",
             "/register",
-            "/findAll"
+            "/findAll",
+            "/application/**"
     };
 
     @Override
