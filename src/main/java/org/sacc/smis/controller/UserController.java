@@ -2,14 +2,11 @@ package org.sacc.smis.controller;
 
 import org.sacc.smis.entity.User;
 import org.sacc.smis.entity.UserRegisterParam;
-import org.sacc.smis.mapper.UserMapper;
 import org.sacc.smis.model.RestResult;
 import org.sacc.smis.model.UserInfo;
 import org.sacc.smis.service.UserService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -41,6 +38,9 @@ public class UserController {
 
     @ResponseBody
     @PostMapping("/update")
+    /**
+     * Authentication authentication 从session中拿到用户信息
+     */
     public RestResult<Boolean> update(@RequestBody User user, Authentication authentication){
         UserInfo userInfo = (UserInfo)authentication.getPrincipal();
         user.setId(userInfo.getId());

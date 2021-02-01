@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
  * Created by 林夕
  * Date 2021/1/19 20:15
  */
-public interface UserMapper extends JpaRepository<User,Integer> {
+public interface UserRepository extends JpaRepository<User,Integer> {
     User findByStudentId(String studentId);
 
     User findByEmail(String email);
