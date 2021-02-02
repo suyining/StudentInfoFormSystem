@@ -6,12 +6,10 @@ import org.sacc.smis.model.RestResult;
 import org.sacc.smis.model.UserInfo;
 import org.sacc.smis.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -45,5 +43,15 @@ public class UserController {
         UserInfo userInfo = (UserInfo)authentication.getPrincipal();
         user.setId(userInfo.getId());
         return RestResult.success(userService.updateInfo(user));
+    }
+
+    @ResponseBody
+    @GetMapping("/userInfo")
+    @PreAuthorize("hasRole('STUDENT')")
+    public RestResult<User> getUserInfo(Authentication authentication){
+        UserInfo userInfo = (UserInfo)authentication.getPrincipal();
+        // 隐藏密码等敏感信息
+        userInfo.setPassword("n/a");
+        return RestResult.success(userInfo);
     }
 }

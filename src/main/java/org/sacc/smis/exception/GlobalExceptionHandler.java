@@ -6,6 +6,7 @@ import org.sacc.smis.model.RestResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.validation.BindException;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -83,5 +84,11 @@ public class GlobalExceptionHandler {
     public RestResult<Business> businessRestResult(BusinessException e){
         logger.error("user校验异常",e);
         return RestResult.error(e.getBusiness().getMessage());
+    }
+
+    @ExceptionHandler(value = AccessDeniedException.class)
+    public RestResult<ResultEnum> accessDeniedException(AccessDeniedException e){
+        logger.error("您没有权限访问");
+        return RestResult.error(ResultEnum.NO_PERMISSION_ACCESS);
     }
 }

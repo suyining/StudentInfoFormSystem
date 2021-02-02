@@ -29,26 +29,26 @@ public class User {
     @Column(unique = true)
     private String studentId;
     @Column(nullable = false)
-    private String role = "1";
+    private String role = "0";
     /**
      * 学院
      */
-    @Column(nullable = false)
+    //@Column(nullable = false)
     private String college;
     /**
      * 年级
      */
-    @Column(nullable = false)
+    //@Column(nullable = false)
     private Integer grade;
     /**
      * 专业
      */
-    @Column(nullable = false)
+    //@Column(nullable = false)
     private String profession;
     /**
      * 身份证
      */
-    @Column(nullable = false)
+    //@Column(nullable = false)
     private String idCord;
     @CreatedDate
     private LocalDateTime createdAt;
