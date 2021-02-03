@@ -6,9 +6,11 @@ import org.sacc.smis.entity.Item;
 import org.sacc.smis.entity.ItemType;
 import org.sacc.smis.entity.ItemValue;
 import org.sacc.smis.model.RestResult;
+import org.sacc.smis.model.UserInfo;
 import org.sacc.smis.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 //学生提交表单API
@@ -26,7 +28,6 @@ public class StudentController {
      * @param name
      * @param textContentValue
      * @param typeContentValue
-     * @param user_id
      * @return
      */
     //提交表单
@@ -36,7 +37,8 @@ public class StudentController {
                                       @RequestParam("textContentValue") String textContentValue,
                                       @RequestParam("content_type") String content_type,
                                       @RequestParam("typeContentValue") String typeContentValue,
-                                      @RequestParam("user_id")  Integer user_id){
+                                      Authentication authentication){
+        UserInfo userInfo = (UserInfo)authentication.getPrincipal();
         Item item = new Item();
         ItemValue itemValue = new ItemValue();
         ItemType itemType = new ItemType();
@@ -46,7 +48,7 @@ public class StudentController {
         itemType.setDataSource(typeContentValue);
         //封装ItemValue
         itemValue.setValue(textContentValue);
-        itemValue.setUserId(user_id);
+        itemValue.setUserId(userInfo.getId());
         //封装Item
         item.setName(name);
         //封装ApplicationItem
