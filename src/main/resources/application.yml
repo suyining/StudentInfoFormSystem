@@ -18,6 +18,22 @@ spring:
     prefix: classpath:/templates/
     suffix: .ftl
 
+  # springboot-mail配置
+  mail:
+    host: smtp.gmail.com
+    username: tan13621251388@gmail.com
+    password: 12345
+    properties:
+      smtp:
+        auth: true;
+        starttls: true;
+        required: true;
+      mail:
+        smtp:
+          ssl:
+            enable: true;
+
+
 logging:
   level:
     org.springframework.security:

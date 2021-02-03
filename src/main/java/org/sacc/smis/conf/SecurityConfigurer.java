@@ -30,9 +30,6 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
             "/application/**",
             "/submit_item"
     };
-    private static final String[] _AUTH_LIST ={
-            "/application/**"
-    };
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {

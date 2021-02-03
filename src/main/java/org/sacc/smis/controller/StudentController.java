@@ -1,7 +1,6 @@
 package org.sacc.smis.controller;
 
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.sacc.smis.entity.ApplicationItem;
 import org.sacc.smis.entity.Item;
 import org.sacc.smis.entity.ItemType;

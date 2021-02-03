@@ -45,8 +45,9 @@ public class UserController {
     }
 
     @ResponseBody
-    @PostMapping("/findPassWord")
-    public RestResult<Boolean> findPassWord(@RequestParam("email") String email){
+    @PostMapping("/sendValidationEmail")
+    //通过邮箱找回密码
+    public RestResult<Boolean> sendValidationEmail(@RequestParam("email") String email){
         return null;
     }
 
