@@ -1,6 +1,6 @@
 package org.sacc.smis.service.impl;
 
-import org.sacc.smis.entity.Item;
+import cn.hutool.core.bean.BeanUtil;
 import org.sacc.smis.entity.User;
 import org.sacc.smis.entity.UserRegisterParam;
 import org.sacc.smis.mapper.UserMapper;
@@ -14,9 +14,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
-import java.util.Optional;
 
 /**
  * Created by 林夕
@@ -58,6 +56,25 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         User u = userMapper.findByPrimaryKey(user.getId());
         BeanUtils.copyProperties(user,u,GetNullPropertyNamesUtil.getNullPropertyNames(user));
         userMapper.save(u);
+        return true;
+    }
+
+    @Override
+    public User findUserByEmail(String email) {
+        return userMapper.findByEmail(email);
+    }
+
+    @Override
+    public User findUserByStudentId(String studentId) {
+        return userMapper.findByStudentId(studentId);
+    }
+
+    @Override
+    public boolean updatePassword(Integer userId, String password) {
+        User user = userMapper.findByPrimaryKey(userId);
+        user.setId(userId);
+        user.setPassword(passwordEncoder.encode(password));
+        userMapper.save(user);
         return true;
     }
 

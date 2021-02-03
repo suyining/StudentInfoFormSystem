@@ -13,8 +13,8 @@ public enum ResultEnum {
 
 
 
-    private Integer resultCode;
-    private String resultMsg;
+    private final Integer resultCode;
+    private final String resultMsg;
     ResultEnum(Integer resultCode, String resultMsg) {
         this.resultCode = resultCode;
         this.resultMsg = resultMsg;

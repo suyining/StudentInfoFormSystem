@@ -14,6 +14,12 @@ import java.time.LocalDateTime;
 
 @Entity
 @Data
+@Table(
+        indexes = {
+                @Index(name = "email",columnList = "email",unique = true),
+                @Index(name = "studentId" ,columnList = "studentId", unique = true)
+        }
+)
 public class User {
     /**
      * 自增id

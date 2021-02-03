@@ -18,5 +18,14 @@ public interface UserService {
 
     boolean updateInfo(User user);
 
+    User findUserByEmail(String email);
+
+    User findUserByStudentId(String studentId);
+
+    boolean updatePassword(Integer userId, String password);
+
+
+
+
 
 }
