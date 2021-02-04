@@ -1,5 +1,6 @@
 package org.sacc.smis.service.impl;
 
+import org.sacc.smis.entity.UpdatePassword;
 import org.sacc.smis.entity.User;
 import org.sacc.smis.entity.UserRegisterParam;
 import org.sacc.smis.enums.Business;
@@ -65,6 +66,17 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         User u = userRepository.findByPrimaryKey(user.getId());
         BeanUtils.copyProperties(user,u,GetNullPropertyNamesUtil.getNullPropertyNames(user));
         userRepository.save(u);
+        return true;
+    }
+
+    @Override
+    public boolean updatePassword(UpdatePassword u, Integer userId) {
+        User user = userRepository.findByPrimaryKey(userId);
+        if(u.getNewPassword().equals(u.getOldPassword()))
+            throw new BusinessException(Business.OLD_PASSWORD_EQUAL_NEW_PASSWORD);
+        else if(!passwordEncoder.matches(u.getOldPassword(),user.getPassword()))
+            throw new BusinessException(Business.OLD_PASSWORD_ERROR);
+        userRepository.updatePassword(userId,passwordEncoder.encode(u.getNewPassword()));
         return true;
     }
 }

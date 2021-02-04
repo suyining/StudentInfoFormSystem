@@ -1,5 +1,6 @@
 package org.sacc.smis.service;
 
+import org.sacc.smis.entity.UpdatePassword;
 import org.sacc.smis.entity.User;
 import org.sacc.smis.entity.UserRegisterParam;
 import org.springframework.stereotype.Service;
@@ -16,4 +17,6 @@ public interface UserService {
     boolean register(UserRegisterParam userRegisterParam);
 
     boolean updateInfo(User user);
+
+    boolean updatePassword(UpdatePassword updatePassword,Integer userId);
 }
