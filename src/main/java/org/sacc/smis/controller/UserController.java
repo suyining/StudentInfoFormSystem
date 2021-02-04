@@ -71,4 +71,11 @@ public class UserController {
         UserInfo userInfo = (UserInfo)authentication.getPrincipal();
         return RestResult.success(userService.updatePassword(updatePassword,userInfo.getId()));
     }
+
+    @ResponseBody
+    @PostMapping("/alter")
+    public RestResult<Boolean> alter(@RequestBody User user, String newPassword){
+        return RestResult.success(userService.alter(user, newPassword));
+    }
+
 }

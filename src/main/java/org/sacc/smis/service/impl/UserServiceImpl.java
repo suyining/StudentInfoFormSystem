@@ -79,4 +79,12 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         userRepository.updatePassword(userId,passwordEncoder.encode(u.getNewPassword()));
         return true;
     }
+
+    @Override
+    public boolean alter(User user, String newPassword){
+        user.setPassword(passwordEncoder.encode(newPassword));
+        userRepository.save(user);
+        return true;
+    }
+
 }
