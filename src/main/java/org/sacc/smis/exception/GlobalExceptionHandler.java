@@ -83,7 +83,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = BusinessException.class)
     public RestResult<Business> businessRestResult(BusinessException e){
         logger.error("user校验异常",e);
-        return RestResult.error(e.getBusiness().getMessage());
+        return RestResult.error(e.getBusiness().getCode(),e.getBusiness().getMessage());
     }
 
     /**
