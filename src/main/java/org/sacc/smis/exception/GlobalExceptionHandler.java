@@ -86,6 +86,9 @@ public class GlobalExceptionHandler {
         return RestResult.error(e.getBusiness().getMessage());
     }
 
+    /**
+     * 捕获权限异常
+     */
     @ExceptionHandler(value = AccessDeniedException.class)
     public RestResult<ResultEnum> accessDeniedException(AccessDeniedException e){
         logger.error("您没有权限访问");
