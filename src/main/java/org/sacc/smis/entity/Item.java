@@ -37,9 +37,19 @@ public class Item {
     private String monitorTag;
 
     /**
+     * 班长id
+     */
+    private Integer monitorId;
+
+    /**
      * 辅导员给出的tag
      */
     private String teacherTag;
+
+    /**
+     * 辅导员id
+     */
+    private Integer teacherId;
 
     @CreatedDate
     private LocalDateTime createdAt;

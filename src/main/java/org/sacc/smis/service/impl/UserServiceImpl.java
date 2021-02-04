@@ -3,7 +3,9 @@ package org.sacc.smis.service.impl;
 import cn.hutool.core.bean.BeanUtil;
 import org.sacc.smis.entity.User;
 import org.sacc.smis.entity.UserRegisterParam;
-import org.sacc.smis.mapper.UserMapper;
+import org.sacc.smis.enums.Business;
+import org.sacc.smis.exception.BusinessException;
+import org.sacc.smis.mapper.UserRepository;
 import org.sacc.smis.model.UserInfo;
 import org.sacc.smis.service.UserService;
 import org.sacc.smis.util.GetNullPropertyNamesUtil;
@@ -16,6 +18,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Created by 林夕
@@ -24,14 +27,14 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService, UserDetailsService {
     @Autowired
-    private UserMapper userMapper;
+    private UserRepository userRepository;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        User user = userMapper.findByStudentId(s);
+        User user = userRepository.findByStudentId(s);
         if (user == null) {
             throw new UsernameNotFoundException(s);
         }
@@ -40,42 +43,46 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     @Override
     public List<User> findAll() {
-        return userMapper.findAll();
+        return userRepository.findAll();
     }
 
     @Override
     public boolean register(UserRegisterParam userRegisterParam) {
+        if (userRepository.findByStudentId(userRegisterParam.getStudentId()) != null)
+            throw new BusinessException(Business.STUDENT_ID_IS_EXIT);
+        else if (userRepository.findByEmail(userRegisterParam.getEmail()) != null)
+            throw new BusinessException(Business.EMAIL_IS_EXIT);
         User user = new User();
         BeanUtils.copyProperties(userRegisterParam, user);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        userMapper.save(user);
+        userRepository.save(user);
         return true;
     }
 
     @Override
     public boolean updateInfo(User user) {
-        User u = userMapper.findByPrimaryKey(user.getId());
+        User u = userRepository.findByPrimaryKey(user.getId());
         BeanUtils.copyProperties(user, u, GetNullPropertyNamesUtil.getNullPropertyNames(user));
-        userMapper.save(u);
+        userRepository.save(u);
         return true;
     }
 
     @Override
     public User findUserByEmail(String email) {
-        return userMapper.findByEmail(email);
+        return userRepository.findByEmail(email);
     }
 
     @Override
     public User findUserByStudentId(String studentId) {
-        return userMapper.findByStudentId(studentId);
+        return userRepository.findByStudentId(studentId);
     }
 
     @Override
     public boolean updatePassword(Integer userId, String password) {
-        User user = userMapper.findByPrimaryKey(userId);
+        User user = userRepository.findByPrimaryKey(userId);
         user.setId(userId);
         user.setPassword(passwordEncoder.encode(password));
-        userMapper.save(user);
+        userRepository.save(user);
         return true;
     }
 

@@ -5,10 +5,16 @@ package org.sacc.smis.enums;
  * Date 2021/1/19 22:17
  */
 public enum UserRole {
+
     /**
      * 学生
      */
     STUDENT,
+
+    /**
+     * 班长
+     */
+    MONITOR,
 
     /**
      * 辅导员
@@ -16,7 +22,7 @@ public enum UserRole {
     TEACHER,
 
     /**
-     * 班长
+     * 管理员
      */
-    MONITOR
+    ADMIN
 }

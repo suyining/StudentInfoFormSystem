@@ -11,6 +11,7 @@ import org.sacc.smis.service.ValidateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
@@ -47,6 +48,9 @@ public class UserController {
 
     @ResponseBody
     @PostMapping("/update")
+    /**
+     * Authentication authentication 从session中拿到用户信息
+     */
     public RestResult<Boolean> update(@RequestBody User user, Authentication authentication) {
         UserInfo userInfo = (UserInfo) authentication.getPrincipal();
         user.setId(userInfo.getId());
@@ -133,4 +137,14 @@ public class UserController {
         return responseBody;
     }
 
+
+    @ResponseBody
+    @GetMapping("/userInfo")
+    @PreAuthorize("hasRole('STUDENT')")
+    public RestResult<User> getUserInfo(Authentication authentication) {
+        UserInfo userInfo = (UserInfo) authentication.getPrincipal();
+        // 隐藏密码等敏感信息
+        userInfo.setPassword("n/a");
+        return RestResult.success(userInfo);
+    }
 }

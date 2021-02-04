@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-public interface ApplicationMapper extends JpaRepository<Application, Integer> {
+public interface ApplicationRepository extends JpaRepository<Application, Integer> {
 
     @Query("select a from Application a where a.id = :id")
     Application findByPrimaryKey(@Param("id") Integer id);

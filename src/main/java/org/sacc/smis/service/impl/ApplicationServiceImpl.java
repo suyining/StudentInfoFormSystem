@@ -1,9 +1,7 @@
 package org.sacc.smis.service.impl;
 
 import org.sacc.smis.entity.Application;
-import org.sacc.smis.entity.ApplicationItem;
-import org.sacc.smis.entity.User;
-import org.sacc.smis.mapper.ApplicationMapper;
+import org.sacc.smis.mapper.ApplicationRepository;
 import org.sacc.smis.service.ApplicationService;
 import org.sacc.smis.util.GetNullPropertyNamesUtil;
 import org.springframework.beans.BeanUtils;
@@ -15,42 +13,36 @@ import java.util.List;
 @Service
 public class ApplicationServiceImpl implements ApplicationService {
     @Autowired
-    private ApplicationMapper applicationMapper;
+    private ApplicationRepository applicationRepository;
 
 
     @Override
     public boolean addApplication(Application application) {
-        applicationMapper.save(application);
+        applicationRepository.save(application);
         return true;
     }
 
     @Override
     public boolean deleteApplication(Integer applicationId) {
-        applicationMapper.deleteById(applicationId);
+        applicationRepository.deleteById(applicationId);
         return true;
     }
 
     @Override
     public boolean updateApplication(Application application) {
-//        if (applicationMapper.existsById(application.getId())){
-//            Application oldApplication = applicationMapper.getOne(application.getId());
-//            oldApplication.setName(application.getName());
-//            oldApplication.setUpdatedAt(application.getUpdatedAt());
-//            oldApplication.setUserId(application.getUserId());
-//        }
-        Application a = applicationMapper.findByPrimaryKey(application.getId());
+        Application a = applicationRepository.findByPrimaryKey(application.getId());
         BeanUtils.copyProperties(application, a, GetNullPropertyNamesUtil.getNullPropertyNames(application));
-        applicationMapper.save(a);
+        applicationRepository.save(a);
         return true;
     }
 
     @Override
     public List<Application> findAllApplications() {
-        return applicationMapper.findAll();
+        return applicationRepository.findAll();
     }
 
     @Override
     public Application getApplicationById(Integer applicationId) {
-        return applicationMapper.getOne(applicationId);
+        return applicationRepository.getOne(applicationId);
     }
 }

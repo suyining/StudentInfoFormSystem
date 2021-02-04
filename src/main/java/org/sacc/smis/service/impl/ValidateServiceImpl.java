@@ -5,7 +5,7 @@ import cn.hutool.core.date.DateUnit;
 import cn.hutool.core.date.DateUtil;
 import org.sacc.smis.entity.User;
 import org.sacc.smis.entity.UserValidate;
-import org.sacc.smis.mapper.ValidateMapper;
+import org.sacc.smis.mapper.ValidateRepository;
 import org.sacc.smis.service.ValidateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -24,7 +24,7 @@ public class ValidateServiceImpl implements ValidateService {
     private JavaMailSenderImpl sender;
 
     @Autowired
-    private ValidateMapper validateMapper;
+    private ValidateRepository validateMapper;
 
     @Value("${spring.mail.username}")
     private String from;
