@@ -16,8 +16,8 @@ import java.util.List;
  * Date 2021/1/19 22:14
  */
 public class UserInfo extends User implements UserDetails {
-    public UserInfo(User user){
-        BeanUtils.copyProperties(user,this);
+    public UserInfo(User user) {
+        BeanUtils.copyProperties(user, this);
     }
 
     @Override
@@ -50,6 +50,6 @@ public class UserInfo extends User implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return getId()!=null;
+        return getId() != null;
     }
 }

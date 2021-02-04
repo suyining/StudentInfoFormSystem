@@ -10,7 +10,7 @@ import org.springframework.data.repository.query.Param;
  * Date 2021/1/19 20:15
  */
 
-public interface UserMapper extends JpaRepository<User,Integer> {
+public interface UserMapper extends JpaRepository<User, Integer> {
     @Query("select u from User u where u.studentId = :studentId")
     User findByStudentId(@Param("studentId") String studentId);
 

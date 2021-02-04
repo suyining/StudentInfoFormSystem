@@ -25,7 +25,4 @@ public interface UserService {
     boolean updatePassword(Integer userId, String password);
 
 
-
-
-
 }

@@ -25,6 +25,7 @@ public class ItemServiceImpl implements ItemService {
 
     /**
      * 提交表单
+     *
      * @param item
      * @return
      */
@@ -55,9 +56,10 @@ public class ItemServiceImpl implements ItemService {
         applicationItemMapper.save(applicationItem);
         return true;
     }
+
     @Override
     @Transactional(rollbackOn = Exception.class)//添加回滚支持
-    public boolean submitItem(Item item,ItemValue itemValue,ItemType itemType,ApplicationItem applicationItem) {
+    public boolean submitItem(Item item, ItemValue itemValue, ItemType itemType, ApplicationItem applicationItem) {
         addItemType(itemType);
         item.setItemTypeId(itemType.getId());
         addItem(item);

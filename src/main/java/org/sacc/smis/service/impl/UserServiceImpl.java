@@ -14,6 +14,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 /**
@@ -31,7 +32,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         User user = userMapper.findByStudentId(s);
-        if(user == null){
+        if (user == null) {
             throw new UsernameNotFoundException(s);
         }
         return new UserInfo(user);
@@ -45,7 +46,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     @Override
     public boolean register(UserRegisterParam userRegisterParam) {
         User user = new User();
-        BeanUtils.copyProperties(userRegisterParam,user);
+        BeanUtils.copyProperties(userRegisterParam, user);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userMapper.save(user);
         return true;
@@ -54,7 +55,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     @Override
     public boolean updateInfo(User user) {
         User u = userMapper.findByPrimaryKey(user.getId());
-        BeanUtils.copyProperties(user,u,GetNullPropertyNamesUtil.getNullPropertyNames(user));
+        BeanUtils.copyProperties(user, u, GetNullPropertyNamesUtil.getNullPropertyNames(user));
         userMapper.save(u);
         return true;
     }

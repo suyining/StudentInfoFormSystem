@@ -23,7 +23,6 @@ public class StudentController {
 
 
     /**
-     *
      * @param application_id
      * @param name
      * @param textContentValue
@@ -32,18 +31,18 @@ public class StudentController {
      */
     //提交表单
     @PostMapping("/item")
-    public RestResult<Boolean> submit(@RequestParam("application_id")  Integer application_id,
+    public RestResult<Boolean> submit(@RequestParam("application_id") Integer application_id,
                                       @RequestParam("name") String name,
                                       @RequestParam("textContentValue") String textContentValue,
                                       @RequestParam("content_type") String content_type,
                                       @RequestParam("typeContentValue") String typeContentValue,
-                                      Authentication authentication){
-        UserInfo userInfo = (UserInfo)authentication.getPrincipal();
+                                      Authentication authentication) {
+        UserInfo userInfo = (UserInfo) authentication.getPrincipal();
         Item item = new Item();
         ItemValue itemValue = new ItemValue();
         ItemType itemType = new ItemType();
         ApplicationItem applicationItem = new ApplicationItem();
-       //封装ItemType
+        //封装ItemType
         itemType.setName(content_type);
         itemType.setDataSource(typeContentValue);
         //封装ItemValue
@@ -53,19 +52,18 @@ public class StudentController {
         item.setName(name);
         //封装ApplicationItem
         applicationItem.setApplicationId(application_id);
-        return RestResult.success(200, itemService.submitItem(item,itemValue,itemType,applicationItem));//提交Item
+        return RestResult.success(200, itemService.submitItem(item, itemValue, itemType, applicationItem));//提交Item
     }
 
     @GetMapping("/item/{item_id}")
-    public RestResult<Item> getItemById(@PathVariable("item_id") Integer itemId){
+    public RestResult<Item> getItemById(@PathVariable("item_id") Integer itemId) {
         return null;
     }
 
     @PutMapping("/item")
-    public RestResult<Boolean> updateItem(@RequestBody Item item){
+    public RestResult<Boolean> updateItem(@RequestBody Item item) {
         return null;
     }
-
 
 
 }

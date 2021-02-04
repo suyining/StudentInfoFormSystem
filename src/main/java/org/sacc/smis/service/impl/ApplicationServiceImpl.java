@@ -39,7 +39,7 @@ public class ApplicationServiceImpl implements ApplicationService {
 //            oldApplication.setUserId(application.getUserId());
 //        }
         Application a = applicationMapper.findByPrimaryKey(application.getId());
-        BeanUtils.copyProperties(application,a, GetNullPropertyNamesUtil.getNullPropertyNames(application));
+        BeanUtils.copyProperties(application, a, GetNullPropertyNamesUtil.getNullPropertyNames(application));
         applicationMapper.save(a);
         return true;
     }

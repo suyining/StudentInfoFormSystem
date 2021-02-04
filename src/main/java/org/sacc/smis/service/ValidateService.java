@@ -10,10 +10,14 @@ import java.util.List;
 public interface ValidateService {
 
     void sendPasswordResetEmail(SimpleMailMessage email);
+
     UserValidate insertNewResetRecord(UserValidate validate, User users, String token);
+
     List<UserValidate> findUserByResetToken(String resetToken);
+
     boolean validateLimitation(String email, long requestPerDay, long interval, String token);
-    boolean sendValidateLimitation(String email, long requestPerDay, long interval);
+
+    long sendValidateLimitation(String email, long requestPerDay, int interval);
 
 
 }
