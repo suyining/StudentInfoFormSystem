@@ -22,12 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0340f58f-72c0-4c68-89cb-e5047477c6cb" name="Default Changelist" comment="2-2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/UserServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="0340f58f-72c0-4c68-89cb-e5047477c6cb" name="Default Changelist" comment="2-2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +42,11 @@
     <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jy4Z8dMXs8tnLT79nhTkQmBiZc" />
@@ -134,7 +134,7 @@
       <workItem from="1612343952125" duration="2531000" />
       <workItem from="1612413839489" duration="3366000" />
       <workItem from="1612439519501" duration="1128000" />
-      <workItem from="1612440668719" duration="432000" />
+      <workItem from="1612440668719" duration="746000" />
     </task>
     <task id="LOCAL-00001" summary="README">
       <created>1610980717564</created>
@@ -248,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612361158691</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="2-2">
+      <created>1612441161801</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1612441161801</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
