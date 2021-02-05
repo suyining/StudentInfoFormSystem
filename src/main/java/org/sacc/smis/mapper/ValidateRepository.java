@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface ValidateMapper extends JpaRepository<UserValidate, Integer> {
+public interface ValidateRepository extends JpaRepository<UserValidate, Integer> {
     @Query("select u from UserValidate u where u.resetToken = :token")
     List<UserValidate> findByToken(@Param("token") String token);
 

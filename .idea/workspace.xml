@@ -28,58 +28,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0340f58f-72c0-4c68-89cb-e5047477c6cb" name="Default Changelist" comment="Pull requests">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_5_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_jakarta_mail_1_6_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_3_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/controller/TeacherController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/entity/UserValidate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/ApplicationItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/ApplicationMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/ItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/ItemTypeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/ItemValueMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/ValidateMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/ApplicationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/ItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/ValidateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/ApplicationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/ItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/ValidateServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/sacc/smis/ApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/sacc/smis/util/MailTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/sacc/smis/util/RequstTest.java" afterDir="false" />
+    <list default="true" id="0340f58f-72c0-4c68-89cb-e5047477c6cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/StudentManagementInformationSystemApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/StudentManagementInformationSystemApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/conf/SecurityConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/conf/SecurityConfigurer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/enums/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/enums/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/model/RestResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/model/RestResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/model/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/model/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student-management-information-system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/student-management-information-system.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/StudentManagementInformationSystemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/StudentManagementInformationSystemApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/conf/SecurityConfigurer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/conf/SecurityConfigurer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/enums/ResultEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/enums/ResultEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/exception/GlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/mapper/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/mapper/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/model/RestResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/model/RestResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/model/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/model/UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/ApplicationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/ValidateMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/ValidateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/ValidateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/ValidateServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +146,7 @@
       <workItem from="1612335525970" duration="301000" />
       <workItem from="1612343952125" duration="2531000" />
       <workItem from="1612413839489" duration="3366000" />
-      <workItem from="1612494152510" duration="2030000" />
+      <workItem from="1612494152510" duration="2387000" />
     </task>
     <task id="LOCAL-00001" summary="README">
       <created>1610980717564</created>
@@ -328,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612438447512</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Pull requests">
+      <created>1612496472719</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1612496472719</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,14 +335,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1612436543563" />
-    <state x="230" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611319404511">
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612497408073">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="230" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1611319404511" />
-    <state x="132" y="0" key="CommitChangelistDialog2" timestamp="1612495962674">
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1612497408073" />
+    <state x="132" y="0" key="CommitChangelistDialog2" timestamp="1612496470161">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="132" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1612495962674" />
+    <state x="132" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1612496470161" />
     <state x="421" y="110" key="FileChooserDialogImpl" timestamp="1612436154346">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -468,10 +428,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1612180625369" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1612438711736">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1612496481966">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1612438711736" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1612496481966" />
     <state x="448" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611061869772">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
