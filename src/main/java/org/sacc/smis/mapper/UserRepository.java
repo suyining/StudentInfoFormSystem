@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.stereotype.Repository;
 
 /**
  * Created by 林夕
@@ -14,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 
 
-public interface UserRepository extends JpaRepository<User,Integer> {
+public interface UserRepository extends JpaRepository<User, Integer> {
     User findByStudentId(String studentId);
 
     User findByEmail(String email);
@@ -25,6 +26,6 @@ public interface UserRepository extends JpaRepository<User,Integer> {
     @Transactional
     @Modifying
     @Query("update User u set u.password= :password where u.id= :id")
-    void updatePassword(@Param("id") Integer id,@Param("password") String password);
+    void updatePassword(@Param("id") Integer id, @Param("password") String password);
 
 }

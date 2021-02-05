@@ -30,12 +30,6 @@ public class ApplicationServiceImpl implements ApplicationService {
 
     @Override
     public boolean updateApplication(Application application) {
-//        if (applicationRepository.existsById(application.getId())){
-//            Application oldApplication = applicationRepository.getOne(application.getId());
-//            oldApplication.setName(application.getName());
-//            oldApplication.setUpdatedAt(application.getUpdatedAt());
-//            oldApplication.setUserId(application.getUserId());
-//        }
         Application a = applicationRepository.findByPrimaryKey(application.getId());
         BeanUtils.copyProperties(application, a, GetNullPropertyNamesUtil.getNullPropertyNames(application));
         applicationRepository.save(a);

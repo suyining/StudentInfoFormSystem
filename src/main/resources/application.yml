@@ -5,27 +5,26 @@ spring:
     username: root
     password: root
     #url: jdbc:mysql://localhost:3306/smis?characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
-    url: jdbc:log4jdbc:mysql://localhost:3306/smis?characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:log4jdbc:mysql://49.234.79.216:3306/sims?characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
   servlet:
     multipart:
       max-file-size: 16MB
       max-request-size: 16MB
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     show-sql: true
   thymeleaf:
     prefix: classpath:/templates/
     suffix: .ftl
 
-#   springboot-mail配置
+ #springboot-mail配置
   mail:
     host: smtp.qq.com
-    username: 2790673868@qq.com
-    password: cmctfqxhjvqfdgje
+    username: XXXXXX@qq.com
+    password: emailPassword
     port: 465
     properties:
-      from: 2790673868@qq.com
       mail:
         smtp:
           auth: true
@@ -35,8 +34,7 @@ spring:
             enable: true
           required: true
 
-
-
+#日志配置
 logging:
   level:
     org.springframework.security:

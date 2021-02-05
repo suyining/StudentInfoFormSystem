@@ -8,15 +8,16 @@ import org.sacc.smis.enums.Business;
  * Date 2021/1/21 20:58
  */
 @Getter
-public class BusinessException extends RuntimeException{
+public class BusinessException extends RuntimeException {
     private final Business business;
 
-    public BusinessException(Business business){
+    public BusinessException(Business business) {
         super(business.getMessage());
         this.business = business;
     }
-    public BusinessException(Business business, Throwable throwable){
-        super(business.getMessage(),throwable);
+
+    public BusinessException(Business business, Throwable throwable) {
+        super(business.getMessage(), throwable);
         this.business = business;
     }
 }

@@ -20,7 +20,7 @@ public interface UserService {
 
     boolean updateInfo(User user);
 
-    boolean updatePassword(UpdatePassword updatePassword,Integer userId);
+    boolean updatePassword(UpdatePassword updatePassword, Integer userId);
 
     User findUserByEmail(String email);
 

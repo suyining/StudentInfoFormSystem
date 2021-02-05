@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 import java.util.Date;
 
 /*
- * 用以验证用户身份来
+ * 用以验证用户身份,实现密码找回等功能;
  * */
 @Entity
 @Data

@@ -15,12 +15,12 @@ public class GetNullPropertyNamesUtil {
     /**
      * 用于拷贝时遍历source内为null的属性
      */
-    public static String[] getNullPropertyNames (Object source) {
+    public static String[] getNullPropertyNames(Object source) {
         final BeanWrapper src = new BeanWrapperImpl(source);
         PropertyDescriptor[] pds = src.getPropertyDescriptors();
 
         Set<String> emptyNames = new HashSet<>();
-        for(PropertyDescriptor pd : pds) {
+        for (PropertyDescriptor pd : pds) {
             Object srcValue = src.getPropertyValue(pd.getName());
             // 此处判断可根据需求修改
             if (srcValue == null) {
