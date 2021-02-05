@@ -1,6 +1,7 @@
 package org.sacc.smis.service.impl;
 
 import org.sacc.smis.entity.UpdatePassword;
+import cn.hutool.core.bean.BeanUtil;
 import org.sacc.smis.entity.User;
 import org.sacc.smis.entity.UserRegisterParam;
 import org.sacc.smis.enums.Business;
@@ -53,7 +54,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         else if(userRepository.findByEmail(userRegisterParam.getEmail())!=null)
             throw new BusinessException(Business.EMAIL_IS_EXIT);
         User user = new User();
-        BeanUtils.copyProperties(userRegisterParam,user);
+        BeanUtils.copyProperties(userRegisterParam, user);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setCreatedAt(LocalDateTime.now());
         user.setUpdatedAt(LocalDateTime.now());
@@ -79,4 +80,25 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         userRepository.updatePassword(userId,passwordEncoder.encode(u.getNewPassword()));
         return true;
     }
+
+    @Override
+    public User findUserByEmail(String email) {
+        return userRepository.findByEmail(email);
+    }
+
+    @Override
+    public User findUserByStudentId(String studentId) {
+        return userRepository.findByStudentId(studentId);
+    }
+
+    @Override
+    public boolean updatePassword(Integer userId, String password) {
+        User user = userRepository.findByPrimaryKey(userId);
+        user.setId(userId);
+        user.setPassword(passwordEncoder.encode(password));
+        userRepository.save(user);
+        return true;
+    }
+
+
 }

@@ -2,10 +2,10 @@ spring:
   datasource:
     #driver-class-name: com.mysql.cj.jdbc.Driver
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-    username: root
+    username: smis
     password: root
     #url: jdbc:mysql://localhost:3306/smis?characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
-    url: jdbc:log4jdbc:mysql://localhost:3306/smis?characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:log4jdbc:mysql://49.234.79.216:3306/sims?characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
   servlet:
     multipart:
       max-file-size: 16MB
@@ -17,6 +17,24 @@ spring:
   thymeleaf:
     prefix: classpath:/templates/
     suffix: .ftl
+
+#   springboot-mail配置
+  mail:
+    host: smtp.qq.com
+    username: xxxxx@qq.com
+    password:
+    port: 465
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            enable: true
+          required: true
+
+
 
 logging:
   level:

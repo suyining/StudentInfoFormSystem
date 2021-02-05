@@ -12,6 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
  * Created by 林夕
  * Date 2021/1/19 20:15
  */
+
+
 public interface UserRepository extends JpaRepository<User,Integer> {
     User findByStudentId(String studentId);
 
@@ -24,4 +26,5 @@ public interface UserRepository extends JpaRepository<User,Integer> {
     @Modifying
     @Query("update User u set u.password= :password where u.id= :id")
     void updatePassword(@Param("id") Integer id,@Param("password") String password);
+
 }
