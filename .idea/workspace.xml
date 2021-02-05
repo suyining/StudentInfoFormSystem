@@ -29,36 +29,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0340f58f-72c0-4c68-89cb-e5047477c6cb" name="Default Changelist" comment="2-5更新">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_jakarta_mail_1_6_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_3_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/entity/UpdatePassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student-management-information-system.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/StudentManagementInformationSystemApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/conf/SecurityConfigurer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/entity/UpdatePassword.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/entity/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/enums/Business.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/enums/ResultEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/exception/GlobalExceptionHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/mapper/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/model/RestResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/model/UserInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_jakarta_mail_1_6_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_jakarta_mail_1_6_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_3_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_3_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/enums/Business.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/enums/Business.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/entity/UserValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/entity/UserValidate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/enums/ResultEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/enums/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/enums/UserRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/model/RestResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/model/RestResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/ValidateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/ValidateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/util/GetNullPropertyNamesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/util/GetNullPropertyNamesUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/StudentManagementInformationSystemApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/StudentManagementInformationSystemApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/conf/SecurityConfigurer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/conf/SecurityConfigurer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/entity/UpdatePassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/entity/UpdatePassword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/enums/Business.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/enums/Business.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/enums/ResultEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/enums/ResultEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/mapper/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/mapper/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/model/RestResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/model/RestResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/model/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/model/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +74,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Users\86153\.m2\wrapper\dists\apache-maven-3.6.3-bin\1iopthnavndlasol9gbrbg6bf2\apache-maven-3.6.3" />
+        <option name="mavenHome" value="D:/Environment/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Environment\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -107,10 +98,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="ReactorSettings">
@@ -129,7 +120,7 @@
       <recent name="C:\Users\86153\Downloads\StudentInfoFormSystem" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.StudentManagementInformationSystemApplication">
+  <component name="RunManager" selected="Spring Boot.StudentManagementInformationSystemApplication (1)">
     <configuration name="StudentManagementInformationSystemApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="StudentInfoFormSystem" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.sacc.smis.StudentManagementInformationSystemApplication" />
@@ -357,132 +348,6 @@
     <MESSAGE value="Pull requests" />
     <MESSAGE value="2-5更新" />
     <option name="LAST_COMMIT_MESSAGE" value="2-5更新" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612182338200">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1612182338199" />
-    <state x="331" y="141" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611056291100">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="331" y="141" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1611056291100" />
-    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1612436543563">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1612436543563" />
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612497408073">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1612497408073" />
-    <state x="132" y="0" key="CommitChangelistDialog2" timestamp="1612496470161">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="132" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1612496470161" />
-    <state x="421" y="110" key="FileChooserDialogImpl" timestamp="1612436154346">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="421" y="110" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1612436154346" />
-    <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1605164905424" />
-    <state width="1237" height="25" key="GridCell.Tab.0.bottom" timestamp="1612495657687">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="265" key="GridCell.Tab.0.bottom/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1612495657687" />
-    <state width="1237" height="7" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
-    <state width="1237" height="25" key="GridCell.Tab.0.center" timestamp="1612495657686">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="265" key="GridCell.Tab.0.center/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1612495657686" />
-    <state width="1237" height="7" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
-    <state width="1237" height="25" key="GridCell.Tab.0.left" timestamp="1612495657685">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="265" key="GridCell.Tab.0.left/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1612495657685" />
-    <state width="1237" height="7" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
-    <state width="1237" height="25" key="GridCell.Tab.0.right" timestamp="1612495657687">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="265" key="GridCell.Tab.0.right/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1612495657687" />
-    <state width="1237" height="7" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
-    <state width="1237" height="25" key="GridCell.Tab.1.bottom" timestamp="1612495657687">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="265" key="GridCell.Tab.1.bottom/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1612495657687" />
-    <state width="1237" height="7" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1604765827141" />
-    <state width="1237" height="25" key="GridCell.Tab.1.center" timestamp="1612495657687">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="265" key="GridCell.Tab.1.center/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1612495657687" />
-    <state width="1237" height="7" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
-    <state width="1237" height="25" key="GridCell.Tab.1.left" timestamp="1612495657687">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="265" key="GridCell.Tab.1.left/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1612495657687" />
-    <state width="1237" height="7" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
-    <state width="1237" height="25" key="GridCell.Tab.1.right" timestamp="1612495657687">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="265" key="GridCell.Tab.1.right/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1612495657687" />
-    <state width="1237" height="7" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1604765827141" />
-    <state width="1237" height="265" key="GridCell.Tab.2.bottom" timestamp="1611121602031">
-      <screen x="0" y="0" width="1218" height="720" />
-    </state>
-    <state width="1237" height="265" key="GridCell.Tab.2.bottom/0.0.1218.720@0.0.1218.720" timestamp="1611121602031" />
-    <state width="1237" height="265" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1611068287958" />
-    <state width="1237" height="265" key="GridCell.Tab.2.center" timestamp="1611121602030">
-      <screen x="0" y="0" width="1218" height="720" />
-    </state>
-    <state width="1237" height="265" key="GridCell.Tab.2.center/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="265" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1611068287957" />
-    <state width="1237" height="265" key="GridCell.Tab.2.left" timestamp="1611121602030">
-      <screen x="0" y="0" width="1218" height="720" />
-    </state>
-    <state width="1237" height="265" key="GridCell.Tab.2.left/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="265" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1611068287957" />
-    <state width="1237" height="265" key="GridCell.Tab.2.right" timestamp="1611121602031">
-      <screen x="0" y="0" width="1218" height="720" />
-    </state>
-    <state width="1237" height="265" key="GridCell.Tab.2.right/0.0.1218.720@0.0.1218.720" timestamp="1611121602031" />
-    <state width="1237" height="265" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1611068287958" />
-    <state x="122" y="51" key="MergeDialog" timestamp="1612496371908">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="122" y="51" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1612496371908" />
-    <state x="277" y="101" key="MultipleFileMergeDialog" timestamp="1612496371928">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="277" y="101" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1612496371928" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1612180625369">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1612180625369" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1612496481966">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1612496481966" />
-    <state x="448" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611061869772">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="448" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1611061869772" />
-    <state x="232" y="1" key="new project wizard" timestamp="1610980550611">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="232" y="1" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1610980550611" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1612274902355">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1612274902355" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1612495424775">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1612495424775" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

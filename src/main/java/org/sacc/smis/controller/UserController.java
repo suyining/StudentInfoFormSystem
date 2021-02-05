@@ -148,7 +148,7 @@ public class UserController {
     @ResponseBody
     @GetMapping("/userInfo")
     @PreAuthorize("hasRole('STUDENT')")
-    public RestResult<User> getUserInfo(Authentication authentication) {
+    public RestResult<UserInfo> getUserInfo(Authentication authentication) {
         UserInfo userInfo = (UserInfo) authentication.getPrincipal();
         // 隐藏密码等敏感信息
         userInfo.setPassword("n/a");

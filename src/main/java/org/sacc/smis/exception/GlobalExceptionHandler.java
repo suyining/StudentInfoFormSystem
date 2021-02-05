@@ -17,7 +17,6 @@ import java.sql.SQLException;
 /**
  * Created by 林夕
  * Date 2021/1/21 20:35
- * <p>
  * 全局异常处理类
  */
 @RestControllerAdvice
