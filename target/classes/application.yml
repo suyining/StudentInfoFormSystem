@@ -12,7 +12,7 @@ spring:
       max-request-size: 16MB
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     show-sql: true
   thymeleaf:
     prefix: classpath:/templates/
@@ -21,10 +21,11 @@ spring:
 #   springboot-mail配置
   mail:
     host: smtp.qq.com
-    username: xxxxx@qq.com
-    password:
+    username: 2790673868@qq.com
+    password: cmctfqxhjvqfdgje
     port: 465
     properties:
+      from: 2790673868@qq.com
       mail:
         smtp:
           auth: true
