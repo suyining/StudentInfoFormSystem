@@ -24,7 +24,7 @@ public class ValidateServiceImpl implements ValidateService {
     private JavaMailSenderImpl sender;
 
     @Autowired
-    private ValidateRepository validateMapper;
+    private ValidateRepository validateRepository;
 
     @Value("${spring.mail.username}")
     private String from;
@@ -52,7 +52,7 @@ public class ValidateServiceImpl implements ValidateService {
         validate.setUserId(users.getId());
         validate.setEmail(users.getEmail());
         validate.setResetToken(token);
-        return validateMapper.save(validate);
+        return validateRepository.save(validate);
     }
 
     /**
@@ -63,7 +63,7 @@ public class ValidateServiceImpl implements ValidateService {
      */
     @Override
     public List<UserValidate> findUserByResetToken(String resetToken) {
-        return validateMapper.findByToken(resetToken);
+        return validateRepository.findByToken(resetToken);
     }
 
     /**
@@ -76,7 +76,7 @@ public class ValidateServiceImpl implements ValidateService {
      */
     @Override
     public boolean validateLimitation(String email, long requestPerDay, long interval, String token) {
-        List<UserValidate> validates = validateMapper.findByEmail(email);
+        List<UserValidate> validates = validateRepository.findByEmail(email);
         Optional<Date> validate = validates.stream().map(UserValidate::getCreatedAt).max(Date::compareTo);
         Date dateOfLastRequest = new Date();
         if (validate.isPresent()) dateOfLastRequest = validate.get();
@@ -98,7 +98,7 @@ public class ValidateServiceImpl implements ValidateService {
      */
     @Override
     public long sendValidateLimitation(String email, long requestPerDay, int interval) {
-        List<UserValidate> validates = validateMapper.findByEmail(email);
+        List<UserValidate> validates = validateRepository.findByEmail(email);
         //没有记录,直接通行
         if (validates.isEmpty()) {
             return 0;

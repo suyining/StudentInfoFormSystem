@@ -1,5 +1,6 @@
 package org.sacc.smis.service.impl;
 
+import org.sacc.smis.entity.UpdatePassword;
 import cn.hutool.core.bean.BeanUtil;
 import org.sacc.smis.entity.User;
 import org.sacc.smis.entity.UserRegisterParam;
@@ -17,8 +18,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
 
 /**
  * Created by 林夕
@@ -55,6 +56,8 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         User user = new User();
         BeanUtils.copyProperties(userRegisterParam, user);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
+        user.setCreatedAt(LocalDateTime.now());
+        user.setUpdatedAt(LocalDateTime.now());
         userRepository.save(user);
         return true;
     }
@@ -64,6 +67,17 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         User u = userRepository.findByPrimaryKey(user.getId());
         BeanUtils.copyProperties(user, u, GetNullPropertyNamesUtil.getNullPropertyNames(user));
         userRepository.save(u);
+        return true;
+    }
+
+    @Override
+    public boolean updatePassword(UpdatePassword u, Integer userId) {
+        User user = userRepository.findByPrimaryKey(userId);
+        if (u.getNewPassword().equals(u.getOldPassword()))
+            throw new BusinessException(Business.OLD_PASSWORD_EQUAL_NEW_PASSWORD);
+        else if (!passwordEncoder.matches(u.getOldPassword(), user.getPassword()))
+            throw new BusinessException(Business.OLD_PASSWORD_ERROR);
+        userRepository.updatePassword(userId, passwordEncoder.encode(u.getNewPassword()));
         return true;
     }
 

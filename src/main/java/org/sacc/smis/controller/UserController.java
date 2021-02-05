@@ -1,5 +1,6 @@
 package org.sacc.smis.controller;
 
+import org.sacc.smis.entity.UpdatePassword;
 import io.swagger.annotations.ApiParam;
 import org.sacc.smis.entity.User;
 import org.sacc.smis.entity.UserRegisterParam;
@@ -9,14 +10,20 @@ import org.sacc.smis.model.UserInfo;
 import org.sacc.smis.service.UserService;
 import org.sacc.smis.service.ValidateService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 /**
@@ -146,5 +153,18 @@ public class UserController {
         // 隐藏密码等敏感信息
         userInfo.setPassword("n/a");
         return RestResult.success(userInfo);
+    }
+
+    @ResponseBody
+    @PostMapping("/updatePassword")
+    public RestResult<Boolean> updatePassword(@RequestBody @Validated UpdatePassword updatePassword,
+                                              BindingResult bindingResult,
+                                              Authentication authentication) {
+        if (bindingResult.hasErrors()) {
+            return RestResult.error(-1, Objects.requireNonNull(bindingResult.getFieldError()).getField() +
+                    bindingResult.getFieldError().getDefaultMessage());
+        }
+        UserInfo userInfo = (UserInfo) authentication.getPrincipal();
+        return RestResult.success(userService.updatePassword(updatePassword, userInfo.getId()));
     }
 }
