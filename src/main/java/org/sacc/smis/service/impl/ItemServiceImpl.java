@@ -1,9 +1,7 @@
 package org.sacc.smis.service.impl;
 
-import org.hibernate.Hibernate;
 import org.sacc.smis.entity.*;
 import org.sacc.smis.mapper.*;
-import org.sacc.smis.model.RestResult;
 import org.sacc.smis.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,13 +12,13 @@ import javax.transaction.Transactional;
 public class ItemServiceImpl implements ItemService {
 
     @Autowired
-    private ItemMapper itemMapper;
+    private ItemRepository itemRepository;
     @Autowired
-    private ApplicationItemMapper applicationItemMapper;
+    private ApplicationItemRepository applicationItemRepository;
     @Autowired
-    private ItemValueMapper itemValueMapper;
+    private ItemValueRepository itemValueRepository;
     @Autowired
-    private ItemTypeMapper itemTypeMapper;
+    private ItemTypeRepository itemTypeRepository;
 
 
     /**
@@ -34,26 +32,26 @@ public class ItemServiceImpl implements ItemService {
         ApplicationItem applicationItem = new ApplicationItem();
         applicationItem.setApplicationId(item.getId());
         applicationItem.setItemId(item.getId());
-        itemMapper.save(item);
-        applicationItemMapper.save(applicationItem);
+        itemRepository.save(item);
+        applicationItemRepository.save(applicationItem);
         return true;
     }
 
     @Override
     public boolean addItemValue(ItemValue itemValue) {
-        itemValueMapper.save(itemValue);
+        itemValueRepository.save(itemValue);
         return true;
     }
 
     @Override
     public boolean addItemType(ItemType itemType) {
-        itemTypeMapper.save(itemType);
+        itemTypeRepository.save(itemType);
         return true;
     }
 
     @Override
     public boolean addApplicationItem(ApplicationItem applicationItem) {
-        applicationItemMapper.save(applicationItem);
+        applicationItemRepository.save(applicationItem);
         return true;
     }
 

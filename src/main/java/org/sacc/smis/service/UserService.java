@@ -6,6 +6,7 @@ import org.sacc.smis.entity.User;
 import org.sacc.smis.entity.UserRegisterParam;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -27,5 +28,5 @@ public interface UserService {
 
     boolean updatePassword(Integer userId, String password);
 
-
+    Integer sendValidationEmail(String email, HttpServletRequest request);
 }

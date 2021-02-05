@@ -30,9 +30,23 @@
   <component name="ChangeListManager">
     <list default="true" id="0340f58f-72c0-4c68-89cb-e5047477c6cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/ApplicationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/ValidateMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/mapper/ValidateRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/ValidateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/ValidateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/enums/Business.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/enums/Business.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/enums/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/enums/ResultEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sacc/smis/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/enums/Business.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/enums/Business.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/enums/ResultEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/enums/ResultEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/enums/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/enums/UserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/mapper/ApplicationRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/mapper/ApplicationRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/model/RestResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/model/RestResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/sacc/smis/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/sacc/smis/service/impl/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +160,7 @@
       <workItem from="1612335525970" duration="301000" />
       <workItem from="1612343952125" duration="2531000" />
       <workItem from="1612413839489" duration="3366000" />
-      <workItem from="1612494152510" duration="2387000" />
+      <workItem from="1612494152510" duration="8625000" />
     </task>
     <task id="LOCAL-00001" summary="README">
       <created>1610980717564</created>
@@ -288,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612496472719</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="2-5">
+      <created>1612497574979</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1612497574979</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,7 +341,8 @@
     <MESSAGE value="2-4" />
     <MESSAGE value="修改密码接口" />
     <MESSAGE value="Pull requests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pull requests" />
+    <MESSAGE value="2-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="2-5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1612182338200">
@@ -331,70 +353,74 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="331" y="141" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1611056291100" />
-    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1612436543563">
+    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser" timestamp="1612518910024">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1612436543563" />
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612497408073">
+    <state x="446" y="46" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1612518910024" />
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1612497488061">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1612497408073" />
-    <state x="132" y="0" key="CommitChangelistDialog2" timestamp="1612496470161">
+    <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1612497488061" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1612497546108">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="132" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1612496470161" />
+    <state x="371" y="87" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1612497546108" />
+    <state x="132" y="0" key="CommitChangelistDialog2" timestamp="1612497573584">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="132" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1612497573584" />
     <state x="421" y="110" key="FileChooserDialogImpl" timestamp="1612436154346">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="110" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1612436154346" />
     <state x="421" y="116" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1605164905424" />
-    <state width="1237" height="25" key="GridCell.Tab.0.bottom" timestamp="1612495657687">
+    <state width="1237" height="104" key="GridCell.Tab.0.bottom" timestamp="1612521869282">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="265" key="GridCell.Tab.0.bottom/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1612495657687" />
+    <state width="1237" height="104" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1612521869282" />
     <state width="1237" height="7" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
-    <state width="1237" height="25" key="GridCell.Tab.0.center" timestamp="1612495657686">
+    <state width="1237" height="104" key="GridCell.Tab.0.center" timestamp="1612521869278">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="265" key="GridCell.Tab.0.center/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1612495657686" />
+    <state width="1237" height="104" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1612521869278" />
     <state width="1237" height="7" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
-    <state width="1237" height="25" key="GridCell.Tab.0.left" timestamp="1612495657685">
+    <state width="1237" height="104" key="GridCell.Tab.0.left" timestamp="1612521869277">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="265" key="GridCell.Tab.0.left/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1612495657685" />
+    <state width="1237" height="104" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1612521869277" />
     <state width="1237" height="7" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
-    <state width="1237" height="25" key="GridCell.Tab.0.right" timestamp="1612495657687">
+    <state width="1237" height="104" key="GridCell.Tab.0.right" timestamp="1612521869280">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="265" key="GridCell.Tab.0.right/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1612495657687" />
+    <state width="1237" height="104" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1612521869280" />
     <state width="1237" height="7" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
-    <state width="1237" height="25" key="GridCell.Tab.1.bottom" timestamp="1612495657687">
+    <state width="1237" height="104" key="GridCell.Tab.1.bottom" timestamp="1612521869283">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="265" key="GridCell.Tab.1.bottom/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1612495657687" />
+    <state width="1237" height="104" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1612521869283" />
     <state width="1237" height="7" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1604765827141" />
-    <state width="1237" height="25" key="GridCell.Tab.1.center" timestamp="1612495657687">
+    <state width="1237" height="104" key="GridCell.Tab.1.center" timestamp="1612521869283">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="265" key="GridCell.Tab.1.center/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1612495657687" />
+    <state width="1237" height="104" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1612521869283" />
     <state width="1237" height="7" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
-    <state width="1237" height="25" key="GridCell.Tab.1.left" timestamp="1612495657687">
+    <state width="1237" height="104" key="GridCell.Tab.1.left" timestamp="1612521869282">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="265" key="GridCell.Tab.1.left/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1612495657687" />
+    <state width="1237" height="104" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1612521869282" />
     <state width="1237" height="7" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1604765827140" />
-    <state width="1237" height="25" key="GridCell.Tab.1.right" timestamp="1612495657687">
+    <state width="1237" height="104" key="GridCell.Tab.1.right" timestamp="1612521869283">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="265" key="GridCell.Tab.1.right/0.0.1218.720@0.0.1218.720" timestamp="1611121602030" />
-    <state width="1237" height="25" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1612495657687" />
+    <state width="1237" height="104" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1612521869283" />
     <state width="1237" height="7" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1604765827141" />
     <state width="1237" height="265" key="GridCell.Tab.2.bottom" timestamp="1611121602031">
       <screen x="0" y="0" width="1218" height="720" />
@@ -428,10 +454,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1612180625369" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1612496481966">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1612497579896">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1612496481966" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1612497579896" />
     <state x="448" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611061869772">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

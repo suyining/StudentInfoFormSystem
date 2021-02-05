@@ -37,9 +37,6 @@ public class UserController {
     @Autowired
     private ValidateService validateService;
 
-    @Value(value = "${spring.mail.username}")
-    private String from;
-
     @ResponseBody
     @PostMapping("/register")
     public RestResult<Boolean> register(@RequestBody UserRegisterParam userRegisterParam){
@@ -69,41 +66,15 @@ public class UserController {
      * @param request
      * @return
      */
+
     @ResponseBody
     @PostMapping("/validate/sendValidationEmail")
     //通过邮箱找回密码
     public RestResult<String> sendValidationEmail(@ApiParam("邮箱地址") @RequestParam("email") String email,
-                                                  HttpServletRequest request) {
-        User user = userService.findUserByEmail(email);
-        RestResult<String> responseBody;
-        if (user == null) {
-            return RestResult.error(404, "该用户不存在");
-        } else {
-            long status = validateService.sendValidateLimitation(email, 5, 5);
-            switch ((int) status){
-                case 0:
-                    //插入一行数据,带有Token
-                    UserValidate userValidate = new UserValidate();
-                    validateService.insertNewResetRecord(userValidate, user, UUID.randomUUID().toString());
-                    //设置邮件内容
-                    String appUrl = request.getScheme() + "://" + request.getServerName();
-                    SimpleMailMessage passWordResetEmail = new SimpleMailMessage();
-                    passWordResetEmail.setFrom(from);
-                    passWordResetEmail.setTo(email);
-                    passWordResetEmail.setSubject("【学生表单管理系统】忘记密码");
-                    passWordResetEmail.setText("您正在申请重置密码，请点击此链接重置密码: \n" +
-                            appUrl + ":8080/validate/resetPassword?token=" + userValidate.getResetToken());
-                    validateService.sendPasswordResetEmail(passWordResetEmail);
-                    responseBody = RestResult.success(400, "发送完成");
-                    break;
-                case -1:
-                    responseBody = RestResult.error( "今日重置密码已经超过上限!");
-                    break;
-                default:
-                    responseBody = RestResult.error( "操作过于频繁,请在"+ status + "秒后再试!");
-            }
-        }
-        return responseBody;
+                                                  HttpServletRequest request){
+        int status = userService.sendValidationEmail(email,request);
+        if(status!=0) return RestResult.error(503, "操作过于频繁,请在"+ status + "秒后再试!");
+        return RestResult.success("发送成功");
     }
 
     /**
